@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <article data-testid="test-profile-card" class="profile-card">
+            <header class="profile-header">
+                <figure class="avatar-container">
+                    <img 
+                        data-testid="test-user-avatar" 
+                        src="https://picsum.photos/seed/profile123/200/200.jpg" 
+                        alt="Profile photo of Alex Johnson"
+                        class="avatar"
+                    >
+                </figure>
+                <div class="profile-info">
+                    <h2 data-testid="test-user-name" class="user-name">Alex Johnson</h2>
+                    <p data-testid="test-user-bio" class="user-bio">
+                        Full-stack developer passionate about creating accessible web experiences. 
+                        Love working with modern JavaScript frameworks and advocating for inclusive design.
+                    </p>
+                    <div class="time-display">
+                        <span class="time-label">Current time (ms):</span>
+                        <time data-testid="test-user-time" class="user-time" datetime="">0</time>
+                    </div>
+                </div>
+            </header>
+
+            <nav aria-label="Social media links" class="social-section">
+                <h3 class="section-title">Connect</h3>
+                <ul data-testid="test-user-social-links" class="social-links">
+                    <li>
+                        <a 
+                            href="https://twitter.com/alexjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-twitter"
+                            class="social-link"
+                            aria-label="Follow Alex Johnson on Twitter"
+                        >
+                            Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://github.com/alexjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-github"
+                            class="social-link"
+                            aria-label="View Alex Johnson's GitHub profile"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="https://linkedin.com/in/alexjohnson" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            data-testid="test-user-social-linkedin"
+                            class="social-link"
+                            aria-label="Connect with Alex Johnson on LinkedIn"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <section aria-labelledby="hobbies-title" class="hobbies-section">
+                <h3 id="hobbies-title" class="section-title">Hobbies</h3>
+                <ul data-testid="test-user-hobbies" class="hobbies-list">
+                    <li>Photography</li>
+                    <li>Hiking</li>
+                    <li>Reading technical books</li>
+                    <li>Coffee brewing</li>
+                    <li>Open source contributions</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="dislikes-title" class="dislikes-section">
+                <h3 id="dislikes-title" class="section-title">Dislikes</h3>
+                <ul data-testid="test-user-dislikes" class="dislikes-list">
+                    <li>Poorly documented code</li>
+                    <li>Slow websites</li>
+                    <li>Inaccessible interfaces</li>
+                    <li>Spaghetti code</li>
+                    <li>Meetings that could have been emails</li>
+                </ul>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
